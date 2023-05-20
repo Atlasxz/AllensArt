@@ -1,0 +1,72 @@
+.titleArt span{
+    color: yellow;
+}
+.titleArt{
+    flex: 20%;
+    font-size: 3em;
+    flex-direction: column;
+}
+
+.textArt{
+    flex: 80%;
+    text-align: justify;
+    text-transform: initial;
+    font-size: 1.5em;
+}
+.descripArt{
+    display: flex;
+    flex: 60%;
+    height: 80%;
+}
+
+.titleArt, .textArt{
+    font-family: var(--fontFamily);
+    color: var(--black);
+    text-shadow: none;
+}
+
+.blankSection{
+    flex: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.blankSection img{
+    height: 70%;
+    width: 70%;
+    border-radius: 10%;
+}
+
+.indexBackground,.IBFrame{
+    height: auto;
+}
+
+.descripArt,.artExemples{
+    height: 100%;
+}
+
+@media (max-width:600px) {
+    .blankSection img{
+        width: 60%;
+        height: 60%;
+        
+    }
+    .indexBackground{
+        height: 100%;
+    }
+    .blankSection{
+        flex: 25%;
+    }
+
+    .textArt{
+        font-size: 1.3em;
+    }
+    .descripArt{
+        flex: 75%;
+    }
+
+    .divFlexes{
+        flex-direction: column;
+    }
+
+}

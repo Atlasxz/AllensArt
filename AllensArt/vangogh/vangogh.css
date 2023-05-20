@@ -1,0 +1,23 @@
+.indexBackground{
+    background-image: url(../_Imgs/campoCipresteVG.webp);
+
+}
+
+body{
+    backdrop-filter: brightness(20%);
+
+    background-image: url(../_Imgs/starryNight.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artExemples{
+    height: 100vh;
+}
+@media (max-width:600px) {
+    .artExemples{
+        height: 100%;
+    }
+
+    
+}

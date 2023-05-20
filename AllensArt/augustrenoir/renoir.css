@@ -1,0 +1,28 @@
+.indexBackground{
+    background-image: url(../_Imgs/pontNeuf.webp);
+    background-size: cover;
+}
+
+body{
+    backdrop-filter: brightness(20%);
+    background-image: url(../_Imgs/osBarqueiros.webp);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.textArt{
+    margin: 15px;
+    height: 100%    ;
+}
+
+@media (max-width:600px) {
+    .artExemples{
+        height: 100%;
+    }
+    
+}
+

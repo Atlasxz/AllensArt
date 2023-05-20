@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap');
+
+* {
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --black: black;
+    --white: white;
+    --sparseWhite: rgba(255, 255, 255, 0.35);
+    --sparseBlack: rgba(0, 0, 0, 0.35);
+    --fontFamily:   'Dosis', sans-serif;
+    --textShadow: rgba(0, 0, 0, 0.716);
+}
+
+.dark {
+    --textShadow: transparent;
+    --white: black;
+    --black: white;
+    --sparseWhite: rgba(0, 0, 0, 0.405);
+    --sparseBlack: rgba(255, 255, 255, 0.35);
+
+}
+
+header{
+    display: flex;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 10vh;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    z-index: 5;
+
+    flex: 10%;
+    padding: 10px;
+}
+    .logo a{
+        height: 100%;
+    }
+    .logo a img{
+        height: 90%;
+    }
+
+        .logo::after{
+            content:"";
+            width: 2px;
+            height: 80%;
+            background-color: white;
+        }
+
+.responsiveLogo{
+    display: none;
+}
+
+
+
+.infos{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 25%;
+}
+
+.blankHeader{
+    display: flex;
+    flex: 40%;
+
+}
+
+.infos a{
+    text-decoration: none;
+    text-shadow:
+    -1px -1px 0 var(--textShadow),  
+     1px -1px 0 var(--textShadow),
+     -1px 1px 0 var(--textShadow),
+      1px 1px 0 var(--textShadow);;
+
+    color: white;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-family: var(--fontFamily);
+    transition: 500ms;
+}
+
+    .infos a{
+            display: inline-block;
+            position: relative;          
+    }
+
+    .infos a:hover{
+        color: yellow;
+    }
+
+    .infos a:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        top: 4vh;
+        background-color: yellow;
+        transform-origin: bottom right;
+        transition: transform 100ms ease-out;
+    }
+
+    .infos a:hover::before{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+.lang{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex: 7%;
+
+    z-index: 10;
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    text-shadow:
+    -1px -1px 0 var(--textShadow),  
+     1px -1px 0 var(--textShadow),
+     -1px 1px 0 var(--textShadow),
+      1px 1px 0 var(--textShadow);;
+    font-family: var(--fontFamily);
+}
+    .subLang{
+        background-color: var(--sparseBlack);
+
+        display: none;
+        position: absolute;
+        top: 10vh;
+    }
+
+    .lang:hover .subLang{
+        display: block;
+    }
+    
+    .LangList{
+        display: flex;
+        flex-direction: column;
+    }
+        .LangList a{
+            padding: 10px 17px;
+            text-decoration: none;
+            color: white;
+            
+            font-size: 1em;
+            font-family: var(--fontFamily);
+        }
+
+.dark-mode {
+    display: flex;
+    height: 100%;
+    flex: 3%;
+    align-items: center;
+}
+
+    .dark-mode_switch {
+        height: 30px;
+        width: 30px;
+        transition: 250ms;
+        background-color: var(--white);
+        border-radius: 50%;
+        border: solid white 1.5px;
+    }
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+.barras {
+    transition: 400ms ease;
+}
+
+.menuIcon:hover .barras {
+    transform: rotate(90deg);
+}
+
+.menuIcon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex: 5%;
+}
+
+
+
+.submenu{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    z-index: 3;
+
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.665);
+}
+
+    .menuIcon:hover .submenu{
+        display: block;
+    }
+    .subList{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        transition: 200ms;
+    }
+    .submenu a{
+        padding: 30px 40px;
+
+        text-decoration: none;
+        color: white;
+        font-size: 1.3em;
+        font-family: var(--fontFamily);
+    }
+
+    .subList a:hover{
+        color: yellow;
+    }
+
+.indexBackground{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    border-bottom: solid 5px rgba(255, 255, 255, 0.404);
+    background-image:url(../_Imgs/groupPeople.webp) ;
+    z-index: -2;
+    background-size: cover;
+    transition: 250ms;
+    background-repeat: no-repeat;
+    
+}
+
+.IBFrame{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* Carrosel.css */
+
+
+
+.blankSection{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    height: 100%;
+    justify-content: center ;
+}
+
+.descripArt{
+    display: flex;
+    flex-direction: column;
+    cursor: context-menu;
+    flex: 30%;
+    margin: 50px;
+    border-radius: 2%;
+    z-index: 0;
+    transition: 500ms;
+    /* From https://css.glass */
+    background: var(--sparseWhite);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid var(--sparseBlack);
+
+}
+.titleArt{
+    margin-top: 10vh;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    /* color: var(--black); */
+    color:  white;
+    text-align: center;
+    padding: 1px;
+    text-shadow:
+    -1px -1px 0 var(--textShadow),  
+     1px -1px 0 var(--textShadow),
+     -1px 1px 0 var(--textShadow),
+      1px 1px 0 var(--textShadow);;
+    font-family: var(--fontFamily);
+    
+}
+.textArt{
+    /* color: var(--black); */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+    text-shadow:
+    -1px -1px 0 var(--textShadow),  
+     1px -1px 0 var(--textShadow),
+     -1px 1px 0 var(--textShadow),
+      1px 1px 0 var(--textShadow);;
+    font-family: var(--fontFamily);
+}
+
+.titleArt, .textArt{
+    font-size: 2.5em;
+}
+
+
+
+
+
+
+/* Carrosel aqui - abra carrosel.css */
+
+
+.artExemples{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 60vh;
+}
+
+.titleExemples{
+    display: flex;
+    align-items: center;
+    flex: 20%;  
+    width: 100%;
+}
+
+    .titleExemples p{
+        color: white;
+        font-size: 1.8em;
+        
+        font-family: var(--fontFamily);
+    }
+
+.divFlexes{
+    display: flex;
+    align-items: center;
+    flex: 80%;
+    height: 100%;
+    width: 100%;
+}
+
+.artE{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 70%;
+    transition: 200ms;
+}
+
+    .artE img{
+        width: 90%;
+        height: 90%;
+        border-radius: 5%;
+        margin: 20px 0px;
+    }
+.artE:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    backdrop-filter: brightness(0.1);
+    display: flex;
+    bottom: 0;
+    height: auto;
+
+    width: 100%;
+}
+
+.Creditos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-family: var(--fontFamily);
+    margin-top: 5vh;
+    font-size: 1.2em;
+}
+
+.Creditos span a{
+    text-decoration: none;
+    color: yellow;
+}
+
+.Creditos p{
+    padding: 2vh;
+}
+
+
+
+@media (max-width:600px) {
+
+    .indexBackground{
+        height: 100%;
+    }
+
+    .IBFrame{
+        flex-direction: column;
+        height: 100%;
+    }
+    .blankSection{
+        flex: 40%;
+        width: 100%;
+    }
+    .blankSection img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .logo{
+        display: none;
+    }
+    
+    .responsiveLogo{
+        display: flex;
+        align-items: center;
+        z-index: 5;
+    
+        flex: 5%;
+        padding: 10px;
+    }
+        .responsiveLogo a{
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+        .responsiveLogo a img{
+            height: 100%;
+        }
+    
+            .responsiveLogo::after{
+                content:"";
+                width: 2px;
+                height: 80%;
+                background-color: white;
+            }
+    
+    .blankHeader{
+        display: none;
+    }
+
+    .infos{
+        justify-content: center;
+    }
+    .infos a{
+        font-size: 0.9em;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .infos a:before{
+        top: 8vh;
+        width: 80%;
+    }
+
+    .aTarget:before{
+        top: 6vh;
+        width: 70%;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+    .descripArt{
+        margin: 20px;
+        flex: 40%;
+    }
+    .titleArt, .textArt{
+        font-size: 2.4em;
+    }
+    .agaeme{
+        flex-direction: column;
+        height: 100%;
+        margin: 20px auto;
+    }
+    .lorem{
+        text-align: center;
+    }
+
+}

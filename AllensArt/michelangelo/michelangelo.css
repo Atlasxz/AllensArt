@@ -1,0 +1,36 @@
+.indexBackground{
+    background-image: url(../_Imgs/adaoClaro.webp);
+    
+}
+.artExemples{
+    height: 100vh;
+}
+
+body{
+    backdrop-filter: brightness(80%);
+    background-image: url(../_Imgs/adao.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.dark{
+    backdrop-filter: brightness(20%);
+}
+
+.artExemples{
+    height: 100%;
+
+}
+
+.titleExemples p{
+    padding: 10vh;
+}
+
+@media (max-width:600px) {
+    .artExemples{
+        height: 100%;
+    }
+    
+}
+

@@ -1,0 +1,193 @@
+.indexBackground{
+    background-image:url(../_Imgs/ceiaEmaus.webp) ;
+    background-position-x: center;
+    height: 100vh;
+}
+
+body{
+    background-image: url(../_Imgs/ceiaEmaus.webp);
+    /* backdrop-filter: brightness(0.8); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: 500ms;
+}
+
+.dark{
+    backdrop-filter: brightness(0.2);
+}
+
+.caracteristicas{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+    margin: 5vh auto;
+    border-radius: 15px;
+    background-color: var(--sparseBlack);
+}
+
+
+.blankHeader{
+    flex: 25%;
+}
+
+.infos{
+    flex: 40%;
+}
+
+
+.titleCarac, .textCarac{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.titleCarac{
+
+    flex: 20%;
+    color: white;    
+
+    text-shadow:
+    -1px -1px 0 var(--textShadow),  
+     1px -1px 0 var(--textShadow),
+     -1px 1px 0 var(--textShadow),
+      1px 1px 0 var(--textShadow);;
+}
+
+.textCarac{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 80%;
+    width: 90%;
+    margin-bottom: 5vh;
+    color: white;    
+
+    text-shadow:
+    -1px -1px 0 var(--textShadow),  
+     1px -1px 0 var(--textShadow),
+     -1px 1px 0 var(--textShadow),
+      1px 1px 0 var(--textShadow);;
+}
+
+.titleCarac p{
+    padding: 10vh;
+    font-size: 2.5em;
+}
+.textCarac p{
+    padding: 5vh;
+    font-size: 1.5em;
+}
+
+.textCarac ul li{
+    font-size: 1.5em;
+}
+
+.titleCarac, .textCarac{
+    font-family: var(--fontFamily)
+}
+
+
+
+
+
+.bestPaintingsRenas{
+    margin-bottom: 5vh;
+}
+
+.titleBPR{
+    display: flex;
+    flex: 20%;
+}
+
+.titleBPR p{
+    padding: 5vh;
+    font-family: var(--fontFamily);
+    font-size: 2.5em;
+    color: white;    
+
+    text-shadow:
+    -1px -1px 0 var(--textShadow),  
+     1px -1px 0 var(--textShadow),
+     -1px 1px 0 var(--textShadow),
+      1px 1px 0 var(--textShadow);;
+}
+
+.paintings{
+    display: flex;
+    flex: 80%;
+    flex-direction: column;
+}
+
+.artista{
+    margin: 2vh;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.a{
+    background-color: var(--white);
+    border-radius: 0 0 20px 20px;
+    margin: 5vh auto;
+    align-items: center;
+    transition: 500ms;
+    width: 60%;
+}
+
+.a:hover{
+    transform: scale(1.1);
+}
+
+.a p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3vh;
+    color: var(--black);
+    font-family: var(--fontFamily);
+    font-size: 1.5em;
+}
+
+.a p b{
+    font-size: 1.5em;
+}
+
+.a img{
+    width: 100%;
+}
+
+.a ul li{
+    font-family: var(--fontFamily);
+    font-size: 1.5em; 
+    color: var(--black);
+
+}
+.a ul{
+    padding: 5vh;
+}
+
+
+.bestPaintingRenas,.titleBPR, .paintings{
+    width: 100%;
+}
+
+@media (max-width:600px) {
+    .indexBackground{
+        height: auto;
+    }
+    .aboutMovs{
+        width: 90%;
+        
+    }
+    .textCarac p{
+        padding: 2vh;
+    }
+    .a{
+        width: 90%;
+    }
+    .caracteristicas{
+        width: 100%;
+    }
+}

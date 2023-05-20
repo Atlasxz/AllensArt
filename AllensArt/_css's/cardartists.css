@@ -1,0 +1,169 @@
+/* Elementos do Header Alterados para Organização Visual */
+
+.menuIcon{
+    display: none;
+}
+.dark-mode{
+    flex: 5%;
+}
+
+
+body{
+    background-image: url(../_Imgs/starrynight.webp);
+    backdrop-filter: brightness(0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* -------------------------------------------------- */
+
+
+
+.titleCards{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: var(--fontFamily);
+    font-size: 5vh;
+    text-align: center;
+    
+}
+
+
+
+.cardArtists{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    text-shadow:
+    -1px -1px 0 var(--textShadow),  
+     1px -1px 0 var(--textShadow),
+     -1px 1px 0 var(--textShadow),
+      1px 1px 0 var(--textShadow);;
+    font-family: var(--fontFamily);
+}
+
+.cardArtists a{
+    height: 80vh;
+    width: 45%;
+    margin: 2vh;
+
+    color: white;
+    text-decoration: none;
+}
+
+.cardArtists a div{
+    border-radius: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+    .cardArtists p{
+        opacity: 0;
+        font-size: 10vh;
+    }
+
+
+
+#VanGogh{
+
+    background-image: linear-gradient(to right, rgb(0 0 0/ .8), rgb(0 0 0/ 0)), url("../_Imgs//vincent.webp");
+
+}
+    #VanGogh:hover p{
+        transition: 500ms ease-in-out;
+        opacity: 1;
+    }
+
+    #VanGogh:hover{
+        transition: 200ms linear;
+        transform: scale(0.95);
+    }
+
+#Monet{
+
+    background-image: linear-gradient(to right, rgb(0 0 0/ .8), rgb(0 0 0/ 0)), url("../_Imgs//monetretrat.webp");
+
+}
+
+    #Monet:hover p{
+        transition: 500ms ease-in-out;
+        opacity: 1;
+    }
+
+        #Monet:hover{
+        transition: 200ms ease-in-out;
+        transform: scale(0.95);
+    }
+
+#Renoir{
+
+    background-image: linear-gradient(to right, rgb(0 0 0/ .8), rgb(0 0 0/ 0)), url("../_Imgs//renoiado.webp");
+
+}
+
+    #Renoir:hover p{
+        transition: 500ms ease-in-out;
+        opacity: 1;
+    }
+
+        #Renoir:hover{
+        transition: 200ms ease-in-out;
+        transform: scale(0.95);
+    }
+
+#daVinci{
+
+    background-image: linear-gradient(to right, rgb(0 0 0/ .8), rgb(0 0 0/ 0)), url("../_Imgs//da_vinci.webp");
+
+}
+
+    #daVinci:hover p{
+        transition: 500ms ease-in-out;
+        opacity: 1;
+    }
+
+        #daVinci:hover{
+        transition: 200ms ease-in-out;
+        transform: scale(0.95);
+    }
+
+    #daVinci, #Monet, #VanGogh, #Renoir{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+    }
+
+    @media (max-width:600px) {
+        .cardArtists{
+            /* flex-wrap: nowrap;
+            flex-direction: column; */
+            flex-wrap: wrap;
+            width: 100%;
+            align-items: center;
+        }
+
+        .cardArtists a{
+            width: 40%;
+            height: 30vh;
+        }
+
+        .cardArtists p{
+            opacity: 0;
+            font-size: 5vh;
+        }
+
+        .titleCards{
+            height: 15vh;
+            font-size: 3.5vh;
+            text-align: center;
+        }
+
+
+
+    }

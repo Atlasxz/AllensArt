@@ -1,0 +1,29 @@
+.indexBackground{
+    background-image: url(../_Imgs/ultimaceia.webp);
+}
+
+body{
+    backdrop-filter: brightness(20%);
+    background-image: url(../_Imgs/daVinciWorks.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.artE{
+    height: 90%;
+}
+
+.artExemples{
+    height: 100vh;
+}
+
+.IBFrame{
+    margin-bottom: 5vh;
+}
+
+@media (max-width:600px) {
+    .artExemples{
+        height: 100%;
+    }
+    
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="_Js/principal.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="_Imgs/logoSite.ico" />
+
+    <link rel="stylesheet" href="_CSS's/principal.css">
+    <title>Página Inicial</title>
+</head>
+<body id="body">
+
+
+
+
+
+    <div class="indexBackground" id="indexBackground">
+        <header>
+            <div class="logo">
+                <a href="index.html" title="#">
+                    <img src="_Imgs/logoWithText.webp"  alt="Website Logo">
+                </a>
+            </div>
+            <div class="responsiveLogo">
+                <a href="index.html" title="#">
+                    <img src="_Imgs/logoOnly.webp"  alt="Website Logo">
+                </a>
+            </div>
+            <div class="blankHeader">
+                <!-- Sim, isso tá vazio obg -->
+            </div>
+            <div class="infos">
+
+                <a href="#movArtisticos">
+                    Movimentos Artisticos
+                </a>
+                <a href="#artistas">
+                    OS Artistas
+                </a>
+            </div>
+    
+            <div class="lang">
+                <p>PT-BR</p>
+                <div class="subLang">
+                    <div class="LangList">
+                        <a href="index.html">PT-BR</a>
+                        <a href="en.html">EN-US</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="dark-mode">
+                <div class="divButtonDM">
+                    <button title="#" class="dark-mode_switch" onclick="darkMode()"></button>
+                </div>
+            </div>
+    
+            <div class="menuIcon">
+                <div class="barras">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="submenu">
+                    <div class="subList">
+                        <a href="VanGogh/pt-br.html">Van Gogh</a>
+                        <a href="Monet/pt-br.html">Claude Monet</a>
+                        <a href="AugustRenoir/pt-br.html">August Renoir</a>
+                        <a href="DaVinci/pt-br.html">Da Vinci</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <div class="IBFrame">
+
+            <div class="descripArt">
+                <div class="titleArt">
+                    BEM VINDO!!
+                </div>
+                <div class="textArt">
+                        
+                    venha conhecer alguns dos melhores artistas da história
+    
+                    
+                    
+                    
+                </div>
+            </div>
+
+            <div class="blankSection">
+                <link rel="stylesheet" href="_CSS's/carrosel.css">
+                <script src="_Js/carrosel.js"></script>
+                <div class="carrosel">
+                    <div class="titleCarrosel">
+                        <p id="DescripCarro">
+                            A Noite Estrelada <br>
+                            Vincent Van Gogh, 1889
+                        </p>
+                    </div>
+                    <div class="imgsCarrosel">
+                        <div class="imgCentral">
+                            <img src="_Imgs/starryNight.webp" id="imgCentro" alt="">
+
+                        </div>
+                        <div class="miniImgs">
+                            <div class="lateralImages">
+                                <img src="_Imgs/starryNight.webp" onclick="imagem1()" alt="" >
+                            </div>
+                            <div class="lateralImages">
+                                <img src="_Imgs/monet.webp" onclick="imagem2()" alt="" >
+                            </div>
+                            <div class="lateralImages">
+                                <img src="_Imgs/barqueiros.webp" onclick="imagem3()" alt="" >
+                            </div>
+                            <div class="lateralImages">
+                                <img src="_Imgs/ultimaceia.webp" onclick="imagem4()" alt="" >
+                            </div>
+                            <div class="lateralImages">
+                                <img src="_Imgs/impressionMonet.webp" onclick="imagem5()" alt="" >
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="_CSS's/cardArtists.css">
+    <div class="titleCards" id="movArtisticos">
+        <p>
+            Movimentos Artisticos<br>
+        </p>
+    </div>
+
+    <link rel="stylesheet" href="_CSS's/movArtisticos.css">
+    <div class="cardMov">
+        <a class="Renasc" href="Renasc/pt-br.html">
+            <p>Renascentismo</p>
+        </a>
+        <a class="Impressi" href="Impressi/pt-br.html">
+            <p>Impressionismo</p>
+        </a>
+        <a class="PosImpressi" href="PosImpressi/pt-br.html">
+            <p>Pós-Impressionismo</p>
+        </a>
+        <a class="Barroco" href="Barroco/pt-br.html">
+            <p>Barroco</p>
+        </a>
+    </div>
+
+            <div class="titleCards">
+                <p>
+                    Artistas em Destaque<br>
+                </p>
+            </div>
+            <div class="cardArtists"  id="artistas">
+                <a href="vangogh/pt-br.html">
+                    <div class="vanGoghCard" id="VanGogh">
+                        <p>Van Gogh</p>
+                    </div>
+                </a>
+                <a href="monet/pt-br.html">                  
+                    <div class="monetCard" id="Monet">
+                        <p>Monet</p>
+                    </div>    
+                </a>
+                <a href="augustrenoir/pt-br.html">
+                    
+                    <div class="renoirCard" id="Renoir">
+                        <p>Renoir</p>
+                    </div>
+                </a>
+                <a href="davinci/pt-br.html">
+                    <div class="daVinciCard" id="daVinci">
+                        <p>Da Vinci</p>
+                    </div>   
+                </a>                 
+            </div>
+<!--                                                             -->
+
+
+<!--                                                             -->
+    <footer>
+        <div class="Creditos">
+            <span>
+                 Desenvolvido por - <a href="https://www.instagram.com/_nichollasalencaar_/?hl=pt-br">@_nichollasalencaar_</a>
+            </span>
+            Copyright © 2022 - Allen's Art - Todos Direitos Reservados
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="CSS válido!" />
+                    </a>
+                </p>
+        </div>
+    </footer>
+</body>
+</html>
